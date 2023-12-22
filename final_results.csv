@@ -1,0 +1,23 @@
+,Result,Confidence of being Cracked
+0,Positive (Crack),0.995696
+1,Negative (Not Crack),0.200329
+2,Positive (Crack),0.999936
+3,Positive (Crack),0.999995
+4,Positive (Crack),1.0
+5,Positive (Crack),1.0
+6,Negative (Not Crack),0.017811
+7,Positive (Crack),0.999996
+8,Positive (Crack),0.999782
+9,Positive (Crack),0.894625
+10,Positive (Crack),0.561471
+11,Positive (Crack),0.933324
+12,Positive (Crack),0.996262
+13,Positive (Crack),1.0
+14,Positive (Crack),1.0
+15,Positive (Crack),1.0
+16,Negative (Not Crack),0.335333
+17,Negative (Not Crack),0.016771
+18,Negative (Not Crack),0.013833
+19,Negative (Not Crack),0.031041
+20,Negative (Not Crack),0.030286
+21,Negative (Not Crack),0.016258
