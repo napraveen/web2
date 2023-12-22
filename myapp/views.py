@@ -41,10 +41,10 @@ def index(request):
 
 def start_video(request):
     global video_capture
-    video_capture = cv2.VideoCapture(0)
+    video_capture = cv2.VideoCapture(1)
 
     currentframe = 0
-    frame_skip = 30
+    frame_skip = 10
     current = 0
     if not os.path.exists('data'): 
         os.makedirs('data') 
