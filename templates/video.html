@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="startBtn">Start Video Capture</button>
+    <button id="stopBtn">Stop Video Capture</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $('#startBtn').click(function () {
+        $.ajax({
+          url: "{% url 'start_video' %}",
+          type: 'GET',
+          success: function (response) {
+            console.log('Video capturing started');
+          },
+          error: function (error) {
+            console.log('Error starting video capturing');
+          },
+        });
+      });
+
+      $('#stopBtn').click(function () {
+        $.ajax({
+          url: "{% url 'stop_video' %}",
+          type: 'GET',
+          success: function (response) {
+            console.log('Video capturing stopped');
+          },
+          error: function (error) {
+            console.log('Error stopping video capturing');
+          },
+        });
+      });
+    </script>
+  </body>
+</html> -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}" />
+    <title>ROV Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="{%static 'image/logo.jpeg' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />  
+  </head>
+  <body>
+    <div class="container">
+      <div id="cont-left">
+        <h1>Capture to Analyse</h1>
+        <div class="parameters">
+          We are analysing four Parameters, <br /><br />
+          <p class="four-parameters">
+            1) Crack on walls of the tunnel,<br />
+            2) Sedimentations, <br />3) Corrosion on the walls,<br />
+            4) Temperature of water inside the tunnel <br /><br />
+          </p>
+          Let's start Capturing...
+        </div>
+
+        <div id="buttons">
+          <button id="startBtn">
+            <div id="login" class="button-glow"><p>Start Capturing</p></div>
+          </button>
+          <button id="stopBtn">
+            <div id="signup" class="button-glow"><p>Stop Capturing</p></div>
+          </button>
+
+        </div>
+        <br><br>
+        <a href="{%url 'monitor' %}" id="cameraBtn">
+          <div id="camera" class="camera-button-glow"><p>Watch Camera  </p></div>
+        </a >
+
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $('#startBtn').click(function () {
+        $.ajax({
+          url: "{% url 'start_video' %}",
+          type: 'GET',
+          success: function (response) {
+            console.log('Video capturing started');
+          },
+          error: function (error) {
+            console.log('Error starting video capturing');
+          },
+        });
+      });
+
+      $('#stopBtn').click(function () {
+        $.ajax({
+          url: "{% url 'stop_video' %}",
+          type: 'GET',
+          success: function (response) {
+            console.log('Video capturing stopped');
+          },
+          error: function (error) {
+            console.log('Error stopping video capturing');
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}" />
+    <title>ROV Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="{%static 'image/logo.jpeg' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="cont-left">
+        <h1>Capture to Analyse</h1>
+        <div class="parameters">
+          We are analysing four Parameters, <br /><br />
+          <p class="four-parameters">
+            1) Crack on walls of the tunnel,<br />
+            2) Sedimentations, <br />3) Corrosion on the walls,<br />
+            4) Temperature of water inside the tunnel <br /><br />
+          </p>
+          Let's start Capturing...
+        </div>
+
+        <div id="buttons">
+          <a href="video" id="startBtn"
+            ><div id="login" class="button-glow"><p>Start Capturing</p></div>
+          </a>
+          <a href="video" id="stopBtn"
+            ><div id="signup" class="button-glow"><p>Stop Capturing</p></div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $('#startBtn').click(function () {
+        $.ajax({
+          url: "{% url 'start_video' %}",
+          type: 'GET',
+          success: function (response) {
+            console.log('Video capturing started');
+          },
+          error: function (error) {
+            console.log('Error starting video capturing');
+          },
+        });
+      });
+
+      $('#stopBtn').click(function () {
+        $.ajax({
+          url: "{% url 'stop_video' %}",
+          type: 'GET',
+          success: function (response) {
+            console.log('Video capturing stopped');
+          },
+          error: function (error) {
+            console.log('Error stopping video capturing');
+          },
+        });
+      });
+    </script>
+  </body>
+</html> -->

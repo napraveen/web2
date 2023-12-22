@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  /* margin-top: 100px; */
+}
+
+.container{
+  padding-top: 10vh;
+}
+
+.container {
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(55, 55, 55));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#cont-left {
+  width: 52vw;
+  height: 100vh;
+}
+#cont-right {
+  width: 48vw;
+  height: 100vh;
+}
+#img1 {
+  border-radius: 10px;
+}
+h1 {
+  font-family: cursive;
+  font-weight: 700;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  margin-top: 120px;
+  margin-left: 50px;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#para {
+  margin-left: 60px;
+  width: 40vw;
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#buttons {
+  display: flex;
+  margin-top: 30px;
+}
+#login {
+  height: 30px;
+  width: 100px;
+  background-color: #5175e0;
+  margin-left: 10vw;
+  border-radius: 20px;
+  margin-right: 1vw;
+}
+
+#signup {
+  height: 30px;
+  width: 100px;
+  background-color: #5175e0;
+
+  /* background: linear-gradient(90deg,#5bcedf, #f96161, #fc8f46, #36e494); */
+  border-radius: 20px;
+}
+
+#signup p,
+#login p {
+  color: black;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.images {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+#img2 {
+  margin-left: 10vw;
+  margin-top: 4vh;
+  border-radius: 10px;
+}
+#img3 {
+  margin-left: 20vw;
+  margin-top: 4vh;
+  border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+  #img2 {
+    margin-left: 0px;
+  }
+  #img3 {
+    margin-left: 0px;
+  }
+}
+
+.button-glow {
+  background-image: linear-gradient(to right, #b015a8, #beb3bd, #8a03f9);
+  background-size: 400% 100%;
+  /* width: 200px;
+  height: 100px; */
+  transition: all 0.5s ease-in-out;
+  transform: translateY(50%);
+  /* text-decoration: none; */
+}
+
+.button-glow:hover {
+  background-position: 100% 0;
+}
+
+#img4 {
+  margin-top: 30px;
+  margin-left: 60px;
+  border-radius: 50%;
+  /* height: 50px; */
+}
+
+#startBtn,
+#stopBtn {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  /* margin-top: 10px; */
+ 
+}
+.button-glow p {
+  padding-top: 4px;
+  /* height: 100px; */
+  text-decoration: none;
+}
+
+.parameters {
+  padding-left: 100px;
+  padding-top: 50px;
+  font-size: larger;
+}
+
+.four-parameters {
+  font-family: 'Courier New', Courier, monospace;
+}
+#login.button-glow,
+#signup.button-glow {
+  height: 30px;
+  width: 140px;
+}
+#cameraBtn{
+  /* padding-left: 30px; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: 200px;
+}
+#camera{
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  
+}
+#camera.camera-button-glow{
+  margin-left: 200px;
+}
+
+.camera-button-glow{
+  /* background-image: linear-gradient(to right, #, #beb3bd, #8a03f9); */
+  background-color: rgb(224, 222, 218);
+  
+}
+.camera-button-glow:hover{
+  background-color: #5175e0;
+  transition: 1s;
+  cursor: pointer;
+
+}
+.camera-button-glow p{
+  color: black;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 10px;
+}

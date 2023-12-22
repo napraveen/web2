@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}" />
+    <title>ROV Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="{%static 'image/logo.jpeg' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="cont-left">
+        <img
+          src="{%static 'image/logo.jpeg' %}"
+          height="100px"
+          width="100px"
+          id="img4"
+        />
+        <h1>AI Based Underwater Rov</h1>
+        <p id="para">
+          Experience & explore our cutting-edge website providing insights from
+          ROV on Cracks & Corrosion on the wall, Sedimentations/debris and
+          Temperature of water on the HydroElectric Head-Race Tunnels(HRTs).
+        </p>
+        <div id="buttons">
+          <a href="video" id="button-glow-link"
+            ><div id="login" class="button-glow"><p>Let's Go!</p></div>
+          </a>
+          <!-- <div id="signup" class="button-glow"><p>Sign-up</p></div> -->
+        </div>
+      </div>
+      <div id="cont-right">
+        <div class="images">
+          <img
+            src="{%static 'image/img8.jpeg' %}"
+            height="150vh"
+            width="300vw"
+            id="img1"
+          />
+          <img
+            src="{%static 'image/img5.jpg' %}"
+            height="150vh"
+            width="300vw"
+            id="img2"
+          />
+          <img
+            src="{%static 'image/img7.jpeg' %}"
+            height="190vh"
+            width="300vw"
+            id="img3"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

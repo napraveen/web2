@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Camera Access</title>
+  </head>
+  <body>
+    <video id="camera-feed" width="640" height="480" autoplay></video>
+
+    <script>
+      // Access the camera feed
+      navigator.mediaDevices
+        .enumerateDevices()
+        .then(function (devices) {
+          const videoDevices = devices.filter(device => device.kind === 'videoinput');
+          
+          if (videoDevices.length > 0) {
+            const cameraId = videoDevices[0].deviceId; // Use the first available camera
+            const constraints = { video: { deviceId: cameraId } };
+
+            return navigator.mediaDevices.getUserMedia(constraints);
+          } else {
+            throw new Error('No video input devices found.');
+          }
+        })
+        .then(function (stream) {
+          const videoElement = document.getElementById('camera-feed');
+          videoElement.srcObject = stream;
+        })
+        .catch(function (error) {
+          console.error('Error accessing the camera:', error);
+        });
+    </script>
+  </body>
+</html>
