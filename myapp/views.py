@@ -17,6 +17,9 @@ from sklearn.metrics import confusion_matrix, classification_report, r2_score
 import tensorflow as tf
 import os
 from django.http import JsonResponse
+import logging
+
+logger = logging.getLogger(__name__)
 
 def index(request):
     return render(request, 'index.html')
@@ -89,6 +92,10 @@ def crack_detection(request):
 
     all_df = pd.concat([positive_df, negative_df], axis=0).sample(frac=1, random_state=1).reset_index(drop=True)
     print(all_df)
+    # new 
+    logger.info(all_df)
+    
+
     train_df, test_df = train_test_split(all_df,
                                         train_size=0.7,
                                         shuffle=True,
@@ -132,15 +139,20 @@ def crack_detection(request):
                                             shuffle=False,
                                             seed=42)
     print(test_data)
-
+    # new 
+    logger.info(test_data)
     def evaluate_model(model, test_data):
         
         results = model.evaluate(test_data, verbose=0)
         loss = results[0]
         accuracy = results[1]
-        
+      
         print(f'Test Loss {loss:.5f}')
+          # new 
+        logger.info(f'Test Loss {loss:.5f}')
         print(f'Test Accuracy {accuracy * 100:.2f} %')
+          # new 
+        logger.info(f'Test Accuracy {accuracy * 100:.2f} %')
         
         
         # predicted y values
@@ -165,8 +177,12 @@ def crack_detection(request):
         # plt.show()
         
         print('r2 Score : ', r2_score(test_data.labels, y_pred))
+        # new 
+        logger.info('r2 Score : ', r2_score(test_data.labels, y_pred))
         print()
         print('Classification Report :\n......................\n', class_report)
+        # new 
+        logger.info('Classification Report :\n......................\n', class_report)
         
 
     def test_new_data(model, dir_path, save_path):
@@ -242,7 +258,7 @@ def crack_detection(request):
                     labels={'index':'Epoch'},
                     title='Training and Validation Loss over Time')
 
-        # fig.show()
+        fig.show()
         return JsonResponse({'status': 'success', 'message': 'Model trained successfully'})
     
 
