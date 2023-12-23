@@ -9,4 +9,5 @@ urlpatterns=[
     path('monitor', views.monitor, name='monitor'),
     path('crack_detection', views.crack_detection, name='crack_detection'),
     path('showimages/', views.showimages, name='showimages'),
+    path('selectoption/', views.selectoption, name='selectoption'),
 ]

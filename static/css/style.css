@@ -183,34 +183,47 @@ h1 {
   outline: none;
   margin-left: 200px;
 }
+.detection-techniques{
+  /* padding-left: 30px; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: 200px;
+  /* height: 200px; */
+}
 #camera{
   height: 40px;
   width: 150px;
   border-radius: 50px;
   
 }
-#camera.camera-button-glow{
+#camera.camera-button-glow, #detection.detection-button-glow{
   margin-left: 200px;
 }
 
-.camera-button-glow{
+.camera-button-glow, .detection-button-glow{
   /* background-image: linear-gradient(to right, #, #beb3bd, #8a03f9); */
   background-color: rgb(224, 222, 218);
   
 }
-.camera-button-glow:hover{
+.camera-button-glow:hover, .detection-button-glow:hover{
   background-color: #5175e0;
   transition: 1s;
   cursor: pointer;
 
 }
-.camera-button-glow p{
+.camera-button-glow p , .detection-button-glow p{
   color: black;
   display: flex;
   /* text-align: center; */
   justify-content: center;
   /* align-items: center; */
   padding-top: 10px;
+}
+#detection{
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
 }
 #signup.button-glow:hover, #login.button-glow:hover{
   cursor: pointer;

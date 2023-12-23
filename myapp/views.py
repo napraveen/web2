@@ -63,6 +63,9 @@ def video (request):
 def monitor (request):
     return render(request, 'monitor.html')
 
+def selectoption(request):
+    return render(request, 'selectoption.html')
+    
 def crack_detection(request):
     positive_dir = Path(r'C:\\Users\\abish\\OneDrive\\Desktop\\datas\\Positive')
     negative_dir = Path(r'C:\\Users\\abish\\OneDrive\\Desktop\\datas\\Negative')
@@ -229,7 +232,8 @@ def crack_detection(request):
         evaluate_model(loaded_model, test_data)
         results = test_new_data(loaded_model, r'./data', r'./static/image/crackedimages')
         results.to_csv(r'./final_results.csv')
-        return JsonResponse({'status': 'success', 'message': 'Model evaluated successfully'})
+        # return JsonResponse({'status': 'success', 'message': 'Model evaluated successfully'})
+        return redirect('showimages')
     else:
         inputs = tf.keras.Input(shape=(120,120,3))
         x = tf.keras.layers.Conv2D(filters=16, kernel_size=(3,3), activation='relu')(inputs)
@@ -260,8 +264,9 @@ def crack_detection(request):
 
         fig.show()
         # return JsonResponse({'status': 'success', 'message': 'Model trained successfully'})
-        return redirect('video')
-    
+        return redirect('showimages')
+    return HttpResponse("Model file does not exist or an error occurred.")
+
 def showimages(request):
     def get_image_names(directory):
         image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp')  
