@@ -227,7 +227,7 @@ def crack_detection(request):
         # Load the trained model if the file exists
         loaded_model = tf.keras.models.load_model(model_file)
         evaluate_model(loaded_model, test_data)
-        results = test_new_data(loaded_model, r'./data', r'./crackedimages')
+        results = test_new_data(loaded_model, r'./data', r'./static/image/crackedimages')
         results.to_csv(r'./final_results.csv')
         return JsonResponse({'status': 'success', 'message': 'Model evaluated successfully'})
     else:
@@ -251,7 +251,7 @@ def crack_detection(request):
                                     ])
         model.save('my_model.h5')
         evaluate_model(model, test_data)
-        results = test_new_data(model, r'./data', r'./crackedimages')
+        results = test_new_data(model, r'./data', r'../static/image/crackedimages')
         results.to_csv(r'./final_results.csv')
         fig = px.line(history.history,
                     y=['loss', 'val_loss'],
@@ -259,9 +259,22 @@ def crack_detection(request):
                     title='Training and Validation Loss over Time')
 
         fig.show()
-        return JsonResponse({'status': 'success', 'message': 'Model trained successfully'})
+        # return JsonResponse({'status': 'success', 'message': 'Model trained successfully'})
+        return redirect('video')
     
+def showimages(request):
+    def get_image_names(directory):
+        image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp')  
+        image_names = []
 
+        for filename in os.listdir(directory):
+            if filename.lower().endswith(image_extensions):
+                image_names.append(filename)
+
+        return image_names
+    directory = './static/image/crackedimages'
+    image_names = get_image_names(directory)
+    return render(request, 'showimages.html',  {'my_list': image_names})
 # def index(request):
 #     return render(request, 'index.html')
 

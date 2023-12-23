@@ -1,23 +1,52 @@
 ,Result,Confidence of being Cracked
-0,Positive (Crack),0.995696
-1,Negative (Not Crack),0.200329
-2,Positive (Crack),0.999936
-3,Positive (Crack),0.999995
+0,Positive (Crack),1.0
+1,Positive (Crack),1.0
+2,Positive (Crack),1.0
+3,Positive (Crack),1.0
 4,Positive (Crack),1.0
 5,Positive (Crack),1.0
-6,Negative (Not Crack),0.017811
-7,Positive (Crack),0.999996
-8,Positive (Crack),0.999782
-9,Positive (Crack),0.894625
-10,Positive (Crack),0.561471
-11,Positive (Crack),0.933324
-12,Positive (Crack),0.996262
+6,Positive (Crack),1.0
+7,Positive (Crack),1.0
+8,Positive (Crack),1.0
+9,Positive (Crack),1.0
+10,Positive (Crack),1.0
+11,Positive (Crack),1.0
+12,Positive (Crack),1.0
 13,Positive (Crack),1.0
 14,Positive (Crack),1.0
 15,Positive (Crack),1.0
-16,Negative (Not Crack),0.335333
-17,Negative (Not Crack),0.016771
-18,Negative (Not Crack),0.013833
-19,Negative (Not Crack),0.031041
-20,Negative (Not Crack),0.030286
-21,Negative (Not Crack),0.016258
+16,Positive (Crack),1.0
+17,Positive (Crack),1.0
+18,Positive (Crack),1.0
+19,Positive (Crack),1.0
+20,Positive (Crack),1.0
+21,Positive (Crack),1.0
+22,Positive (Crack),1.0
+23,Positive (Crack),1.0
+24,Positive (Crack),1.0
+25,Positive (Crack),1.0
+26,Positive (Crack),1.0
+27,Positive (Crack),1.0
+28,Positive (Crack),1.0
+29,Positive (Crack),1.0
+30,Positive (Crack),1.0
+31,Positive (Crack),1.0
+32,Positive (Crack),1.0
+33,Positive (Crack),1.0
+34,Positive (Crack),1.0
+35,Positive (Crack),1.0
+36,Positive (Crack),1.0
+37,Positive (Crack),1.0
+38,Positive (Crack),1.0
+39,Positive (Crack),1.0
+40,Positive (Crack),1.0
+41,Positive (Crack),1.0
+42,Positive (Crack),1.0
+43,Positive (Crack),1.0
+44,Positive (Crack),1.0
+45,Positive (Crack),1.0
+46,Positive (Crack),1.0
+47,Positive (Crack),1.0
+48,Positive (Crack),1.0
+49,Positive (Crack),1.0
+50,Positive (Crack),1.0

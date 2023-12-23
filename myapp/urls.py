@@ -8,4 +8,5 @@ urlpatterns=[
     path('video/', views.video, name='video'),
     path('monitor', views.monitor, name='monitor'),
     path('crack_detection', views.crack_detection, name='crack_detection'),
+    path('showimages/', views.showimages, name='showimages'),
 ]

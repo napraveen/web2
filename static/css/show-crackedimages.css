@@ -1,0 +1,17 @@
+#show-crackedimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#show-crackedimages img {
+    max-width: 300px;
+    height: 300px;
+    height: auto;
+    margin: 8px; /* Adjust the margin as needed */
+}
+#show-crackedimages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
