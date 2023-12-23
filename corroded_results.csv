@@ -1,0 +1,99 @@
+,Result,Confidence of being Corroded
+0,Negative (No Corrosion),0.036893
+1,Negative (No Corrosion),0.008888
+2,Negative (No Corrosion),0.011061
+3,Negative (No Corrosion),0.006426
+4,Negative (No Corrosion),0.003224
+5,Negative (No Corrosion),0.004124
+6,Negative (No Corrosion),0.00454
+7,Negative (No Corrosion),0.006439
+8,Negative (No Corrosion),0.006965
+9,Negative (No Corrosion),0.006216
+10,Negative (No Corrosion),0.003902
+11,Negative (No Corrosion),0.002967
+12,Negative (No Corrosion),0.010861
+13,Negative (No Corrosion),0.001921
+14,Negative (No Corrosion),0.003027
+15,Negative (No Corrosion),0.005396
+16,Negative (No Corrosion),0.005221
+17,Negative (No Corrosion),0.006506
+18,Negative (No Corrosion),0.010476
+19,Negative (No Corrosion),0.019648
+20,Negative (No Corrosion),0.028053
+21,Negative (No Corrosion),0.023186
+22,Negative (No Corrosion),0.032891
+23,Negative (No Corrosion),0.010444
+24,Negative (No Corrosion),0.024849
+25,Negative (No Corrosion),0.003875
+26,Negative (No Corrosion),0.002817
+27,Negative (No Corrosion),0.002921
+28,Negative (No Corrosion),0.00311
+29,Negative (No Corrosion),0.003145
+30,Negative (No Corrosion),0.003068
+31,Negative (No Corrosion),0.003201
+32,Negative (No Corrosion),0.002666
+33,Negative (No Corrosion),0.004632
+34,Negative (No Corrosion),0.004221
+35,Negative (No Corrosion),0.007784
+36,Negative (No Corrosion),0.032849
+37,Negative (No Corrosion),0.040106
+38,Negative (No Corrosion),0.10068
+39,Negative (No Corrosion),0.125285
+40,Negative (No Corrosion),0.118084
+41,Negative (No Corrosion),0.009119
+42,Negative (No Corrosion),0.005885
+43,Negative (No Corrosion),0.018156
+44,Negative (No Corrosion),0.016519
+45,Negative (No Corrosion),0.003983
+46,Negative (No Corrosion),0.002475
+47,Negative (No Corrosion),0.002484
+48,Negative (No Corrosion),0.004943
+49,Negative (No Corrosion),0.015845
+50,Negative (No Corrosion),0.087167
+51,Negative (No Corrosion),0.044211
+52,Negative (No Corrosion),0.005426
+53,Negative (No Corrosion),0.004251
+54,Negative (No Corrosion),0.005682
+55,Positive (Corroded),0.965189
+56,Negative (No Corrosion),0.003179
+57,Positive (Corroded),0.967857
+58,Positive (Corroded),0.966683
+59,Positive (Corroded),0.966792
+60,Positive (Corroded),0.965974
+61,Positive (Corroded),0.966018
+62,Positive (Corroded),0.966873
+63,Positive (Corroded),0.966598
+64,Positive (Corroded),0.965966
+65,Positive (Corroded),0.96554
+66,Positive (Corroded),0.965139
+67,Negative (No Corrosion),0.00315
+68,Positive (Corroded),0.96483
+69,Positive (Corroded),0.96507
+70,Positive (Corroded),0.965205
+71,Positive (Corroded),0.963206
+72,Positive (Corroded),0.965598
+73,Positive (Corroded),0.966505
+74,Positive (Corroded),0.966197
+75,Positive (Corroded),0.966785
+76,Positive (Corroded),0.967613
+77,Positive (Corroded),0.966892
+78,Negative (No Corrosion),0.003173
+79,Positive (Corroded),0.967039
+80,Positive (Corroded),0.966912
+81,Positive (Corroded),0.965481
+82,Positive (Corroded),0.965694
+83,Positive (Corroded),0.964838
+84,Positive (Corroded),0.97389
+85,Positive (Corroded),0.970601
+86,Positive (Corroded),0.966722
+87,Positive (Corroded),0.965748
+88,Positive (Corroded),0.964592
+89,Negative (No Corrosion),0.003851
+90,Positive (Corroded),0.963607
+91,Positive (Corroded),0.965275
+92,Positive (Corroded),0.96513
+93,Positive (Corroded),0.976227
+94,Positive (Corroded),0.973248
+95,Positive (Corroded),0.973931
+96,Positive (Corroded),0.976293
+97,Positive (Corroded),0.973493

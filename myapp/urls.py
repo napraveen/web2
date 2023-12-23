@@ -9,5 +9,7 @@ urlpatterns=[
     path('monitor', views.monitor, name='monitor'),
     path('crack_detection', views.crack_detection, name='crack_detection'),
     path('showimages/', views.showimages, name='showimages'),
+    path('showcorrodedimages/', views.showcorrodedimages, name='showcorrodedimages'),
     path('selectoption/', views.selectoption, name='selectoption'),
+    path('corrosion_detection', views.corrosion_detection, name='corrosion_detection'),
 ]
